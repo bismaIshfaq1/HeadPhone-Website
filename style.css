@@ -1,0 +1,440 @@
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: gray;
+}
+
+
+/* off-screen-menu */
+.off-screen-menu {
+  background-color: #FAC769;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+  z-index: 99999999 ;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+
+
+/* nav */
+nav {
+  padding: 1rem;
+  display: flex;
+  background-color: #FAC769;
+  position: relative;
+  z-index: 999999999999999999;
+  
+}
+
+
+
+/* ham menu */
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span {
+  background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#bannerimage {
+    width: 100%;
+    background-image: url(https://w0.peakpx.com/wallpaper/196/409/HD-wallpaper-headphones-music-concepts-headphones-on-a-yellow-background.jpg);
+    height: 750px;
+    background-repeat: no-repeat;
+    position: sticky;
+    background-size: cover;
+}
+#banner {
+    width: 100%;
+    height: 125px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-color: #FAC769;
+  
+}
+#ban {
+  width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-color: #FAC769;
+
+}
+.j {
+  padding-top: 30px;
+  padding-left: 20%;
+  font-size: 15px;
+    color: white;
+}
+.l{
+  padding-top: 10px;
+    padding-left: 80px;
+    font-size: 50px;
+    color: white;
+}
+.heading {
+    padding-top: 150px;
+    padding-left: 70px;
+    font-size: 16px;
+}
+.o {
+    padding-top: 10px;
+    padding-left: 70px;
+    font-size: 50px;
+}
+.t{
+   
+  display: flex;
+  margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+.n {
+  margin-left: 200px;
+  font-size: 43px;
+  margin-top: 60px;
+}
+.a {
+  margin-left: 70px;
+  font-size: 62px;
+  color: #FAC769;
+  margin-top: 20px;
+  position: absolute;
+  width: 300px;
+}
+.k {
+  margin-top: 20px;
+  margin-left: 70px;
+  color: #666;
+  font-size: 18px;
+}
+.carde {
+  display: inline-block;
+}
+.w {
+  text-decoration: none;
+  color: #FAC769;
+}
+.x {
+  width: 100%;
+    height: 20%;
+    display: block;
+}
+.s {
+  margin-left: 70px;
+  margin-top: 50px;
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialicon{
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.socialicon a {
+ text-decoration: none;
+ padding: 10px;
+ background-color: #FAC769;
+ margin: 10px;
+ border-radius: 50%;
+}
+.socialicon a i {
+  opacity: 0.9;
+  color: #fff;
+}
+.socialicon a:hover{
+background-color: #666;
+  transition: 0.5s;
+}
+
+
+.t:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+/*#sticky {
+  width: 100%;
+  height: 60px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-color: #FAC769;
+}*/
+header{
+  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+}
+header .sticky {
+  padding: 5px 10px;
+  background-color: #FEDA43;
+}
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 70px;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+  }
+  .container {
+    background: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+.p {
+    font-size: 17px;
+    color: black;
+    line-height: 1.5;
+    margin-left: 30px;
+    text-align: left;
+}
+.learn-more {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+.h {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.h {
+    padding-top: 50px;
+}
+
+
+/*Cards area*/
+.card {
+    width: 28%;
+    display: inline-block;
+    margin: 2%;
+  }
+  .image img {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .title {
+  
+    text-align: left;
+    background-color: #FAC769;
+  }
+  
+  .des {
+    padding: 30px;
+    text-align: left;
+    padding-top: 10px;
+    background-color: #FAC769;
+    color: white;
+  }
+  .r {
+    margin-left: 20px;
+  }
+  .car {
+    width: 28%;
+    display: inline-block;
+    margin: 0%;
+  }
+  .img  img{
+    width: 76%;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    /*padding: 20px;*/
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .container{
+      max-width: 1200px;
+    }
+    .card {
+      width: 28%;
+      display: inline-block;
+      margin: 2%;
+    }
+    .title {
+    
+      text-align: center;
+      background-color: #FAC769;
+    }
+    #bannerimage {
+      width: 100%;
+      background-image: url(https://w0.peakpx.com/wallpaper/196/409/HD-wallpaper-headphones-music-concepts-headphones-on-a-yellow-background.jpg);
+      height: auto;
+      background-repeat: no-repeat;
+      position: sticky;
+      background-size: cover;
+  }
+  #banner {
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      background-color: #FAC769;
+    
+  }
+  #ban {
+    width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      background-color: #FAC769;
+  
+  }
+  
+  }
+
+
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%  ;
+height: 50%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* White text */
+  opacity: 0;
+  transition: 0.5 ease;
+}
+
+.icon{
+  color: #fff;
+  font-size: 50px;
+}
+.grid-item:hover .overlay{
+  opacity: 1;
+}
